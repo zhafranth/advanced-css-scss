@@ -1,0 +1,10 @@
+Rekap Pembelajaran Advacnce SCSS - CSS NEW!!!!
+1. Clip-path untuk membuat sebuah component  sesuai bentuk yang kita inginkan contohnya dalam membuat trapesium atau bentuk component lainnya
+2. Keyframe untuk mengatur transisi atau animasi sebuah component
+3. @Mixin pada Scss yaitu untuk membungkus sebuah css dan menambahkan styling dengan menggunakan @include digunakan untuk membuat codingan css lebih rapih dan tetap pada fundalmentar DRY
+4. $ digunakan untuk membuat sebuah variable, biasa digunkan untuk menginisialisasi sebuah size atau warna atau apapun itu
+
+5. Cliping mask untuk text dengan menggunakan properti '-webkit-background-clip : text' contoh pada class 'heading-secondary'
+6. Shape-outside property is used to define the shape that the adjacent inline content may wrap around. It can be used to define complex shapes including images that can be used to wrap text around instead of simple boxes.
+    - shape-outside harus menggunakan properti float untuk dapat menerapkan shape-outside
+7. Backface-visibility digunakan apabli terdapat shaking pada saat transisi element

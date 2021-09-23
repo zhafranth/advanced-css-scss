@@ -1,0 +1,86 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+
+  /* untuk menghilangkan shake pada saat animasi pada heading  */
+  backface-visibility: hidden;
+
+  &--main {
+    display: block;
+    font-weight: 400;
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
+    animation: 2s moveInLeft ease-in-out;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
+    /* 
+        animation-delay : 2s *untuk menambahkan waktu delay sebelum animasi berjalan
+        animation-iteration-count : 3 *untuk menambahkan berapakali  animasi berjalan sebanyak jumlah
+        animation-timing-function : ease/ease-in/ease-in-out/dll. 
+        */
+  }
+
+  &--sub {
+    display: block;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 1.75rem;
+    animation: 2s moveInRight ease-in-out;
+    margin-bottom: 6rem;
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+  &:hover {
+    transform: skewY(2deg);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, $alpha: 0.2); // x direction, y direction, blur, color
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
